@@ -1,28 +1,28 @@
-import Logo from "@/assets/Logo.png";
-
 const Footer = () => {
   return (
-    <footer className="bg-primary-100 py-16">
-      <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
-        <div className="mt-16 basis-1/2 md:mt-0">
-          <img alt="logo" src={Logo} />
-          <p className="my-5">
-            Lorem vitae ut augue auctor faucibus eget eget ut libero. Elementum
-            purus et arcu massa dictum condimentum. Augue scelerisque iaculis
-            orci ut habitant laoreet. Iaculis tristique.
-          </p>
-          <p>© Evogym All Rights Reserved.</p>
+    <footer className="bg-gradient-to-b from-white to-blue-50 py-12">
+      <div className="justify-content mx-auto w-5/6 gap-8 md:flex items-center">
+        <div className="basis-1/2">
+          <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            NACHEL
+          </div>
+          <p className="mt-4 text-gray-500">© 2025 Nachel. All Rights Reserved.</p>
         </div>
-        <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold">Links</h4>
-          <p className="my-5">Massa orci senectus</p>
-          <p className="my-5">Et gravida id et etiam</p>
-          <p>Ullamcorper vivamus</p>
-        </div>
-        <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold">Contact Us</h4>
-          <p className="my-5">Tempus metus mattis risus volutpat egestas.</p>
-          <p>(333)425-6825</p>
+        <div className="mt-8 basis-1/2 md:mt-0 text-right">
+          <div className="space-y-2">
+            <a 
+              href="mailto:contact@nachel.com" 
+              className="block text-gray-600 hover:text-blue-600 transition duration-300"
+            >
+              contact@nachel.com
+            </a>
+            <a 
+              href="tel:+1234567890" 
+              className="block text-gray-600 hover:text-blue-600 transition duration-300"
+            >
+              (123) 456-7890
+            </a>
+          </div>
         </div>
       </div>
     </footer>

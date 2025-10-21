@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Logo from "@/assets/Logo.png";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -16,22 +15,26 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+  const navbarBackground = isTopOfPage 
+    ? "bg-white/70 backdrop-blur-md" 
+    : "bg-white shadow-lg";
 
   return (
     <nav>
       <div
-        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6 transition-all duration-300`}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* LEFT SIDE */}
-            <img alt="logo" src={Logo} />
+            <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:opacity-80 transition duration-300">
+              NACHEL
+            </div>
 
             {/* RIGHT SIDE */}
             {isAboveMediumScreens ? (
-              <div className={`${flexBetween} w-full`}>
-                <div className={`${flexBetween} gap-8 text-sm`}>
+              <div className={`${flexBetween} w-full justify-end`}>
+                <div className={`${flexBetween} gap-12 text-sm font-semibold tracking-wider hover:text-primary-500`}>
                   <Link
                     page="Home"
                     selectedPage={selectedPage}
@@ -43,7 +46,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Our Classes"
+                    page="Products"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
@@ -52,12 +55,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                </div>
-                <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
-                  <ActionButton setSelectedPage={setSelectedPage}>
-                    Become a Member
-                  </ActionButton>
                 </div>
               </div>
             ) : (
@@ -74,7 +71,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-white shadow-2xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
