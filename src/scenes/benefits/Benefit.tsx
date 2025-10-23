@@ -18,17 +18,17 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
   return (
     <motion.div
       variants={childVariant}
-      className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+      className="group relative overflow-hidden rounded-2xl bg-white p-6 sm:p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-purple-600/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
       
       <div className="relative z-10">
-        <div className="mb-6 inline-block rounded-xl bg-gradient-to-r from-blue-100 to-purple-100 p-4">
+        <div className="mb-4 sm:mb-6 inline-block rounded-xl bg-gradient-to-r from-blue-100 to-purple-100 p-3 sm:p-4">
           {icon}
         </div>
 
-        <h4 className="mb-4 text-2xl font-bold text-gray-800 group-hover:text-blue-600">{title}</h4>
-        <p className="mb-6 text-gray-600 leading-relaxed">{description}</p>
+        <h4 className="mb-3 sm:mb-4 text-xl sm:text-2xl font-bold text-gray-800 group-hover:text-blue-600">{title}</h4>
+        <p className="mb-4 sm:mb-6 text-sm sm:text-base text-gray-600 leading-relaxed">{description}</p>
         
         <AnchorLink
           className="inline-flex items-center text-blue-600 transition-colors duration-300 hover:text-purple-600"
