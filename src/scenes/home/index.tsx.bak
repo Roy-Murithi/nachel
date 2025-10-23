@@ -1,0 +1,247 @@
+import { SelectedPage } from "@/shared/types";import { SelectedPage } from "@/shared/types";import { SelectedPage } from "@/shared/types";
+
+import SimpleCarousel from "./SimpleCarousel";
+
+import { carouselImages } from "./types";import SimpleCarousel from "./SimpleCarousel";import SimpleCarousel from "./SimpleCarousel";
+
+
+
+type Props = {import { carouselImages } from "./types";import { carouselImages } from "./types";
+
+  setSelectedPage: (value: SelectedPage) => void;
+
+};
+
+
+
+const Home = ({ setSelectedPage }: Props) => {type Props = {type Props = {
+
+  return (
+
+    <section   setSelectedPage: (value: SelectedPage) => void;  setSelectedPage: (value: SelectedPage) => void;
+
+      id="home" 
+
+      className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-20"};};
+
+      onMouseEnter={() => setSelectedPage(SelectedPage.Home)}
+
+    >
+
+      <div className="mx-auto w-11/12 max-w-7xl">
+
+        {/* MAIN HEADER */}const Home = ({ setSelectedPage }: Props) => {const Home = ({ setSelectedPage }: Props) => {
+
+        <div className="mb-20 space-y-6 text-center">
+
+          <h1 className="text-7xl font-bold tracking-tight">  return (
+
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+
+              Nechal Enterprise    <section   return (
+
+            </span>
+
+          </h1>      id="home"     <section id="home" className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-20">
+
+          <p className="text-3xl font-semibold text-gray-700">
+
+            Your Trusted Technology & Office Solutions Partner      className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-20"      <div className="mx-auto w-11/12 max-w-7xl">
+
+          </p>
+
+          <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-gray-600">      onMouseEnter={() => setSelectedPage(SelectedPage.Home)}        {/* MAIN HEADER */}
+
+            Empowering businesses and institutions with premium computer equipment, comprehensive office solutions, 
+
+            and professional-grade stationery. Experience excellence in every interaction with our curated selection     >        <motion.div
+
+            of products and exceptional customer service.
+
+          </p>      <div className="mx-auto w-11/12 max-w-7xl">          className="mb-20 space-y-6 text-center"
+
+        </div>
+
+        {/* MAIN HEADER */}          initial="hidden"
+
+        {/* CAROUSEL */}
+
+        <div className="relative mx-auto max-w-7xl rounded-3xl bg-gradient-to-r from-blue-100 to-purple-100 p-8 shadow-2xl">        <div className="mb-20 space-y-6 text-center">          whileInView="visible"
+
+          <SimpleCarousel images={carouselImages} />
+
+        </div>          <h1 className="text-7xl font-bold tracking-tight">          viewport={{ once: true, amount: 0.5 }}
+
+
+
+        {/* FEATURES */}            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">          transition={{ duration: 0.5 }}
+
+        <div className="mt-32 grid grid-cols-1 gap-12 md:grid-cols-3">
+
+          <div className="group rounded-2xl bg-white p-10 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">              Nechal Enterprise          variants={{
+
+            <div className="mb-6 inline-block rounded-xl bg-blue-100 p-4">
+
+              <svg className="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">            </span>            hidden: { opacity: 0, y: -50 },
+
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+
+              </svg>          </h1>            visible: { opacity: 1, y: 0 },
+
+            </div>
+
+            <h3 className="text-2xl font-bold text-gray-800 group-hover:text-blue-600">Premium Quality</h3>          <p className="text-3xl font-semibold text-gray-700">          }}
+
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">Top-tier products from trusted brands, ensuring reliability and performance.</p>
+
+          </div>            Your Trusted Technology & Office Solutions Partner        >
+
+          <div className="group rounded-2xl bg-white p-10 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+
+            <div className="mb-6 inline-block rounded-xl bg-purple-100 p-4">          </p>          <h1 className="text-7xl font-bold tracking-tight">
+
+              <svg className="h-8 w-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />          <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-gray-600">            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+
+              </svg>
+
+            </div>            Empowering businesses and institutions with premium computer equipment, comprehensive office solutions,               Nechal Enterprise
+
+            <h3 className="text-2xl font-bold text-gray-800 group-hover:text-purple-600">Fast Delivery</h3>
+
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">Quick and reliable shipping service to meet your urgent needs.</p>            and professional-grade stationery. Experience excellence in every interaction with our curated selection             </span>
+
+          </div>
+
+          <div className="group rounded-2xl bg-white p-10 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">            of products and exceptional customer service.          </h1>
+
+            <div className="mb-6 inline-block rounded-xl bg-indigo-100 p-4">
+
+              <svg className="h-8 w-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">          </p>          <p className="text-3xl font-semibold text-gray-700">
+
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+
+              </svg>        </div>            Your Trusted Technology & Office Solutions Partner
+
+            </div>
+
+            <h3 className="text-2xl font-bold text-gray-800 group-hover:text-indigo-600">Expert Support</h3>          </p>
+
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">Professional guidance and dedicated assistance for all your needs.</p>
+
+          </div>        {/* CAROUSEL */}          <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-gray-600">
+
+        </div>
+
+      </div>        <div className="relative mx-auto max-w-7xl rounded-3xl bg-gradient-to-r from-blue-100 to-purple-100 p-8 shadow-2xl">            Empowering businesses and institutions with premium computer equipment, comprehensive office solutions, 
+
+    </section>
+
+  );          <SimpleCarousel images={carouselImages} />            and professional-grade stationery. Experience excellence in every interaction with our curated selection 
+
+};
+
+        </div>            of products and exceptional customer service.
+
+export default Home;
+          </p>
+
+        {/* FEATURES */}        </motion.div>
+
+        <div className="mt-32 grid grid-cols-1 gap-12 md:grid-cols-3">
+
+          <div className="group rounded-2xl bg-white p-10 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">        {/* CAROUSEL */}
+
+            <div className="mb-6 inline-block rounded-xl bg-blue-100 p-4">        <motion.div
+
+              <svg className="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">          initial="hidden"
+
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />          whileInView="visible"
+
+              </svg>          viewport={{ once: true, amount: 0.5 }}
+
+            </div>          transition={{ delay: 0.2, duration: 0.5 }}
+
+            <h3 className="text-2xl font-bold text-gray-800 group-hover:text-blue-600">Premium Quality</h3>          variants={{
+
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">Top-tier products from trusted brands, ensuring reliability and performance.</p>            hidden: { opacity: 0, y: 50 },
+
+          </div>            visible: { opacity: 1, y: 0 },
+
+          <div className="group rounded-2xl bg-white p-10 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">          }}
+
+            <div className="mb-6 inline-block rounded-xl bg-purple-100 p-4">          className="relative mx-auto max-w-7xl rounded-3xl bg-gradient-to-r from-blue-100 to-purple-100 p-8 shadow-2xl"
+
+              <svg className="h-8 w-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">        >
+
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />          <Carousel images={carouselImages} />
+
+              </svg>        </motion.div>
+
+            </div>
+
+            <h3 className="text-2xl font-bold text-gray-800 group-hover:text-purple-600">Fast Delivery</h3>        {/* FEATURES */}
+
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">Quick and reliable shipping service to meet your urgent needs.</p>        <motion.div
+
+          </div>          className="mt-32 grid grid-cols-1 gap-12 md:grid-cols-3"
+
+          <div className="group rounded-2xl bg-white p-10 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">          initial="hidden"
+
+            <div className="mb-6 inline-block rounded-xl bg-indigo-100 p-4">          whileInView="visible"
+
+              <svg className="h-8 w-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">          viewport={{ once: true, amount: 0.5 }}
+
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />          transition={{ delay: 0.4, duration: 0.5 }}
+
+              </svg>          variants={{
+
+            </div>            hidden: { opacity: 0, y: 50 },
+
+            <h3 className="text-2xl font-bold text-gray-800 group-hover:text-indigo-600">Expert Support</h3>            visible: { opacity: 1, y: 0 },
+
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">Professional guidance and dedicated assistance for all your needs.</p>          }}
+
+          </div>        >
+
+        </div>          <div className="group rounded-2xl bg-white p-10 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+
+      </div>            <div className="mb-6 inline-block rounded-xl bg-blue-100 p-4">
+
+    </section>              <svg className="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+  );                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+
+};              </svg>
+
+            </div>
+
+export default Home;            <h3 className="text-2xl font-bold text-gray-800 group-hover:text-blue-600">Premium Quality</h3>
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">Top-tier products from trusted brands, ensuring reliability and performance.</p>
+          </div>
+          <div className="group rounded-2xl bg-white p-10 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div className="mb-6 inline-block rounded-xl bg-purple-100 p-4">
+              <svg className="h-8 w-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-gray-800 group-hover:text-purple-600">Fast Delivery</h3>
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">Quick and reliable shipping service to meet your urgent needs.</p>
+          </div>
+          <div className="group rounded-2xl bg-white p-10 shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div className="mb-6 inline-block rounded-xl bg-indigo-100 p-4">
+              <svg className="h-8 w-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-gray-800 group-hover:text-indigo-600">Expert Support</h3>
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">Professional guidance and dedicated assistance for all your needs.</p>
+          </div>
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Home;

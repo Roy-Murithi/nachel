@@ -27,8 +27,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* LEFT SIDE */}
-            <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:opacity-80 transition duration-300">
-              NACHEL
+            <div className="text-3xl font-bold">
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:opacity-80 transition duration-300">
+                Nechal
+              </span>
+              {/* <span className="text-gray-700 text-xl ml-1">Enterprise</span> */}
             </div>
 
             {/* RIGHT SIDE */}
@@ -92,7 +95,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Classes"
+              page="Products"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

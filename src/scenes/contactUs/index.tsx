@@ -67,12 +67,15 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               </svg>
             </div>
             <h3 className="mb-2 text-xl font-bold text-gray-800 group-hover:text-green-600">WhatsApp</h3>
-            <p className="text-lg text-gray-600">+1 (234) 567-890</p>
+            <div className="space-y-2">
+              <p className="text-lg text-gray-600">0742412960</p>
+              <p className="text-lg text-gray-600">0716949918</p>
+            </div>
           </a>
 
           {/* Email */}
           <a
-            href="mailto:contact@nachel.com"
+            href="mailto:nechalenterpises@gmail.com"
             className="group rounded-2xl bg-white p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
           >
             <div className="mx-auto mb-6 inline-block rounded-full bg-blue-100 p-4">
@@ -81,7 +84,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               </svg>
             </div>
             <h3 className="mb-2 text-xl font-bold text-gray-800 group-hover:text-blue-600">Email Us</h3>
-            <p className="text-lg text-gray-600">contact@nachel.com</p>
+            <p className="text-lg text-gray-600">nechalenterpises@gmail.com</p>
           </a>
 
           {/* Location */}
@@ -98,7 +101,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               </svg>
             </div>
             <h3 className="mb-2 text-xl font-bold text-gray-800 group-hover:text-purple-600">Visit Us</h3>
-            <p className="text-lg text-gray-600">Embu, Kenya</p>
+            <p className="text-lg text-gray-600">G4S Building, Mama Ngina Street</p>
+            <p className="text-sm text-gray-500">Near G4S Embu Branch</p>
+            <p className="text-sm text-gray-500">Embu, Kenya</p>
           </a>
         </motion.div>
 
@@ -140,8 +145,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             }}
           >
             <iframe
-              title="Nachel location in Embu"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63813.32624469788!2d37.41961901852042!3d-0.5395894775927331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18256f4c823adc51%3A0x98ae3a62e5366f96!2sEmbu%2C%20Kenya!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
+              title="Nechal Enterprise location at G4S Embu"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.808591456646!2d37.45259731475775!3d-0.5396027354566052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18256f4c823adc51%3A0x98ae3a62e5366f96!2sG4S%20Embu%20Branch!5e0!3m2!1sen!2ske!4v1635000000000!5m2!1sen!2ske"
               width="100%"
               height="600"
               style={{ border: 0 }}
