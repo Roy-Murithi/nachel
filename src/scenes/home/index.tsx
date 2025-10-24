@@ -1,6 +1,7 @@
 import { SelectedPage } from "@/shared/types";
 import SimpleCarousel from "./SimpleCarousel";
 import { carouselImages } from "./types";
+import Carousel from "./Carousel";
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -33,7 +34,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
                 {/* CAROUSEL */}
                 <div className="relative mx-auto max-w-7xl rounded-3xl bg-gradient-to-r from-blue-100 to-purple-100 p-8 shadow-2xl">
-                    <SimpleCarousel images={carouselImages} />
+                    <Carousel images={carouselImages} />
                 </div>
 
                 {/* FEATURES */}

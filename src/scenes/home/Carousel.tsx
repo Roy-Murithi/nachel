@@ -82,7 +82,7 @@ const Carousel = ({ images }: Props) => {
                             alt={images[currentIndex].title}
                             className="h-full w-full object-cover"
                         />
-                        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+                        <div className="absolute inset-0 bg-black/30 " />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-8 text-white">
                             <h3 className="text-3xl font-bold">{images[currentIndex].title}</h3>
                             <p className="mt-2 text-lg">{images[currentIndex].description}</p>
